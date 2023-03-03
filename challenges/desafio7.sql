@@ -9,4 +9,4 @@ FROM
         INNER JOIN
     usuario_segue us ON us.artista_id = ar.id
 GROUP BY ar.nome , al.title
-ORDER BY COUNT(us.artista_id) DESC, ar.nome;
+ORDER BY COUNT(us.artista_id) DESC, ar.nome, al.title;
